@@ -2,6 +2,8 @@ import java.util.*;
 
 public class Main {
 
+    //Kan du se det her?
+
     public static void main(String[] args){
 
         List l = new List("name");
