@@ -5,18 +5,13 @@ import java.util.*;
 public class Square {
     public int iterations;
 
-    public String createSquare(int iterations) {
+    public void createSquare(int iterations) {
 
-        Scanner scan = new Scanner(System.in);
-        System.out.print("How large? ");
-        iterations = scan.nextInt();
-
-        for (int i = 0; i == iterations; i++) {
-            System.out.print("*");
-            for (i = 0; i == iterations; i++) {
+        for (int i = 1; i <= iterations; i++) {
+            for (int j = 1; j <= iterations; j++) {
                 System.out.print("*");
             }
+            System.out.println();
         }
-        return "completed";
     }
 }
