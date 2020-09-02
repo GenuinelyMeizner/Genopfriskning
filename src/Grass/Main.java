@@ -8,10 +8,14 @@ public class Main {
 
         Grass grass = new Grass();
 
+        Scanner garden1 = new Scanner(System.in);
+        System.out.print("How long is your grass? ");
+        double growth = garden1.nextDouble();
+
         Scanner garden = new Scanner(System.in);
-        System.out.print("When should you grass be cut? ");
+        System.out.print("When should your grass be cut? ");
         double cut = garden.nextDouble();
 
-        System.out.println(grass.startCut(cut));
+        System.out.println(grass.startCut(cut, growth));
     }
 }

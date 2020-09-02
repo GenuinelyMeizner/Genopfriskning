@@ -26,11 +26,13 @@ public class List {
         for (String i : aList) {
             if (name.equals(i)) {
                 System.out.println("Name is on the list");
+                System.out.println(aList);
                 return true;
             }
             else {
                 aList.add(name);
                 System.out.println("Name added to list");
+                System.out.println(aList);
                 return false;
             }
         }

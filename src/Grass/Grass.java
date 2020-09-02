@@ -4,11 +4,11 @@ import java.util.*;
 
 public class Grass {
 
-    public double startCut(double cut) {
+    public double startCut(double cut, double growth) {
 
         int count = 0;
 
-        for (double growth = 0; cut >= growth; growth = growth + 0.8) {
+        for (growth = growth; cut >= growth; growth = growth + 0.8) {
             count++;
         }
 
