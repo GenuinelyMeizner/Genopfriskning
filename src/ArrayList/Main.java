@@ -11,6 +11,7 @@ public class Main {
         ArrayList<String> aList = new ArrayList<String>();
 
         aList.add("Frederik");
+        aList.add("Christina");
 
         Scanner scan = new Scanner(System.in);
         System.out.print("Insert name: ");

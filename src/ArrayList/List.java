@@ -28,12 +28,9 @@ public class List {
                 System.out.println("Name is on the list");
                 return true;
             }
-            else {
-                aList.add(name);
-                System.out.println("Name added to list");
-                return false;
-            }
         }
-        return true;
+        aList.add(name);
+        System.out.println("Name added to list");
+        return false;
     }
 }
