@@ -4,6 +4,8 @@ public class Sorting {
 
     public void sortPhrase(String phrase) {
 
+        String[] parts = phrase.split("");
+
         if (!phrase.equals(phrase.toLowerCase())) {
 
             System.out.println(phrase);
