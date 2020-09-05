@@ -4,21 +4,24 @@ public class Sorting {
 
     public void sortPhrase(String phrase) {
 
-        String[] parts = phrase.split("");
+        String[] parts = phrase.split(" ");
 
-        if (!phrase.equals(phrase.toLowerCase())) {
+        for(String string : parts) {
 
-            System.out.println(phrase);
-        }
+            if (string.equals(string.toUpperCase())) {
 
-        if (phrase.length() > 3) {
-            String output = phrase.substring(0, 1).toUpperCase() + phrase.substring(1);
-            System.out.println(output);
-        }
+                System.out.println(string);
+            }
 
-        if (phrase.length() <= 3) {
-            String output2 = phrase.toLowerCase();
-            System.out.println(output2);
+            else if (string.length() > 3) {
+                String output = string.substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
+                System.out.println(output);
+            }
+
+            else if (string.length() <= 3) {
+                String output2 = string.toLowerCase();
+                System.out.println(output2);
+            }
         }
     }
 }
